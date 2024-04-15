@@ -5,7 +5,9 @@
     $result=mysqli_query($conn, "select * from user");
     #mysqli_fetch_array() 從查詢出來的資料一筆一筆抓出來
     $row=mysqli_fetch_array($result);
+   // 顯示第一筆使用者資料的帳號和密碼
     echo $row["id"] . " " . $row["pwd"]."<br>"; 
     $row=mysqli_fetch_array($result);
+ // 顯示第二筆使用者資料的帳號和密碼
     echo $row["id"] . " " . $row["pwd"];
 ?>
